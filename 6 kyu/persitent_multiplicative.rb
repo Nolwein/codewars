@@ -8,9 +8,9 @@ def persistence(n)
   return count # Return the number of multiplicative persistence
 end
 
-def persistence(n)
-  n < 10 ? 0 : 1 + persistence(n.to_s.chars.map(&:to_i).reduce(:*))
-end
+# def persistence(n)
+#   n < 10 ? 0 : 1 + persistence(n.to_s.chars.map(&:to_i).reduce(:*))
+# end
 
 # .to_s : Nous convertissons n en une chaîne de caractères (String) afin de pouvoir accéder à ses chiffres individuellement. Cette étape est nécessaire pour extraire les chiffres de n.
 # .chars = Vous divisez la chaîne n_str en un tableau de caractères individuels. Pour n = 349, cela deviendrait ["3", "4", "9"].
